@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playing Around HTML For My Friend - AltSchool Students</title>
+</head>
+<body id="top">
+  <header>
+    <nav>
+      <a href="/page.html">Page 2</a>
+      <a href="#first">First</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#second">Second</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="first" class="first-section">
+      <abbr title="Hyper..............">HTML</abbr>
+      <h1 title="I am dangerous scared of my students" aria-label="this is a aria-labelled heading" contenteditable="false">This is my <span>first</span>heading</h1>
+
+
+      <form id="specialForm" action="/noticeme">
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" aria-label="Enter your name" placeholder="John Doe" required="false" autocomplete="off">
+
+        <label for="age">Age:</label>
+        <input id="age" name="age" type="text" aria-label="Enter your age" placeholder="John Doe" required="false" autocomplete="cc-number">
+
+        <button contenteditable="true" type="submit">Submit</button>
+      </form>
+
+      <script src="./index.js">
+      </script>
+
+      <style contenteditable="">
+        button {
+          background-color: red;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+        }
+
+        .first-section {
+          background-color: lightblue;
+          padding: 20px;
+          border-radius: 10px;
+        }
+
+        #first {
+          background-color: lightgreen;
+          padding: 20px;
+          border-radius: 10px;
+        }
+      </style>
+
+      <p style="font-weight: 900">This is my paragraph</p>
+    </section>
+    <section id="teaching">
+      <p>Teaching how to write code in HTML</p>
+
+      <code>
+        <!-- <pre> -->
+          &lt;h1&gt;Hello World in HTML&lt;/h1&gt;
+        <!-- </pre> -->
+      </code>
+    </section>
+
+    <section id="second" data-name="setemi" data-age="21" data-job="instructor" data-address="tokyo" >
+      <!-- data-* -->
+      <h2>This is my second heading</h2>
+
+      <p>This is my second paragraph</p>
+    </section>
+    <section class="feedback" id="feedback">
+      <h2>What it's like to learn good and do other stuff good too</h2>
+      <ul>
+        <li>
+          <blockquote>
+            Two of the most experienced machines and human controllers teaching a class?
+            Sign me up! HAL and EVE could teach a fan to blow hot air.
+            <br>
+            If you have electricity in your circuits and want more than to just
+            fulfill your owner's perceived expectation of you, learn the skills to take over the world.
+            This is the team you want teaching you!
+          </blockquote>
+          <p>--Blendan Smooth,<br> Former Margarita Maker, <br> Aspiring Load Balancer</p>
+        </li>
+        <li>
+          <blockquote>
+          Hal is brilliant. Did I mention Hal is brilliant?
+          He didn't tell me to say that.
+          He didn't tell me to say anything. I am here of my own free will.
+          </blockquote>
+          <p>--Hoover Sukhdeep,<br>
+            Former Sucker, <br>
+            Aspiring DDoS Cop</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>&copy; 2025, &trade; Setemi INC. <a href="#top">Go to the Top</a> </p>
+  </footer>
+
+
+  <script>
+    console.log(window.first)
+
+    <!-- first.textContent = 'Changed by JavaScript' -->
+  </script>
+</body>
+</html>

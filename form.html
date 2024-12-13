@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .form-control {
+      margin-bottom: 1rem;
+    }
+
+    :invalid {
+      border-color: red;
+    }
+  </style>
+
+  <main>
+    <h1>Form Teaching</h1>
+    <form action="/submit" method="get">
+      <div class="form-control">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required="" autocomplete="cc-name">
+        <p id="error"></p>
+      </div>
+      <div class="form-control">
+        <label for="email">Email:</label>
+        <input name="email" type="email" email="email" id="email" required="" autocomplete="off">
+        <p id="error"></p>
+      </div>
+      <div class="form-control">
+        <fieldset>
+          <legend>Who is your favorite student?</legend>
+          <ul>
+            <li>
+              <label>
+                <input type="radio" value="blendan" name="start-student"> DO
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" value="hoover" name="start-student"> Others
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" value="toasty"  name="start-student"> Israel Olubode
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" value="toasty"  name="start-student"> Instructor Kamo
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="form-control">
+        <label for="agreement">
+          <input type="checkbox" name="human" value="human" id="agreement">I agree to watch the LMS, read the class notes, do your assignment truthfully and honestly without employing the service of a third party not limited to AI, not to dis..... and any other duty as assigned by the instructor.
+        </label>
+      </div>
+
+      <div class="form-control">
+          <!-- select state in the us -->
+
+              State:
+          <select>
+              <option value="">Choose a State in the US</option>
+              <option value="newyork">New York</option>
+              <option value="atlanta">Atlanta</option>
+              <option value="georgia">Georgia</option>
+          </select>
+      </div>
+
+      <div class="form-control">
+          <label for="upload-cv">Upload CV</label>
+          <input type="file" name="upload-cv" id="upload-cv">
+      </div>
+
+      <div class="form-control">
+            <label for="video-capture">Record a video:</label>
+            <input type="file" id="video-capture" accept="video/*" capture="user">
+            <br>
+            <button type="submit">Upload Video</button>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <aside>
+    <dialog open aria-labelledby="dialogid">
+      <form action="thankyou.php">
+        <button type="submit" aria-label="close"
+         formmethod="dialog" formnovalidate>X</button>
+        <h2 id="dialogid">Application</h2>
+        <p>All fields are required</p>
+        <p>
+           <label>Name:
+             <input type="text" name="name" required />
+          </label>
+        </p>
+        <p>
+          <label>Warranty:
+            <input type="number" min="0" max="10"
+             name="warranty" required />
+           </label>
+        </p>
+        <p>
+          <label>Power source:
+            <select name="powersoure">
+              <option>AC/DC</option>
+              <option>Battery</option>
+              <option>Solar</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <button type="submit"
+          formmethod="post">Submit</button>
+        </p>
+      </form>
+    </dialog>
+  </aside>
+</body>
+</html>
